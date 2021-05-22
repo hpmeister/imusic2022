@@ -6,3 +6,13 @@ header {
 header nav {
   display: none;
 }
+
+nav#toggle_menu {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
