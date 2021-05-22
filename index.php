@@ -12,8 +12,9 @@
 <body>
   <header>
     <h1 class="logo">imusic works</h1>
-    <button class="menu" id="btn_menu">menu</button>
+    <button class="menu" id="btn_menu" onclick="toggle_menu()">menu</button>
     <nav><?php include 'assets/menu.php';?></nav>
   </header>
+  <script src="assets/main.js"></script>
 </body>
 </html>
