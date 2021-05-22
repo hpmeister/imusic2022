@@ -3,11 +3,8 @@ header {
   justify-content: space-between;
 }
 
-header nav {
-  display: none;
-}
-
 nav#toggle_menu {
+  display: none;
   position: fixed;
   left: 0px;
   top: 0px;
