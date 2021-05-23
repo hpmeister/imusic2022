@@ -13,8 +13,14 @@
   <header>
     <h1 class="logo">imusic works</h1>
     <button class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()">menu</button>
-    <nav id="toggle_menu"><?php include 'assets/menu.php';?></nav>
   </header>
+  <main class="main_contents">
+
+  </main>
+  <footer class="">
+    <p class="small_text">copyright imusic 2022</p>
+  </footer>
+  <nav id="toggle_menu" style="display: none;"><?php include 'assets/menu.php';?></nav>
   <script src="assets/main.js"></script>
 </body>
 </html>
