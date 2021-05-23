@@ -22,7 +22,7 @@
             <img src="http://placehold.jp/220x220.png" alt="member1">
             <h2 class="name">imusic</h2>
             <p class="descri">Guitarist</p>
-            <p class="equip">Fender ST314, Fender STM, VOX MV50Rock, JimDunlop CryBaby, DD-500, Genesis3</p>
+            <p class="equip">Fender ST314, Fender STM, VOX MV50Rock, JimDunlop CryBaby, Boss DD-500, Digitech Genesis3</p>
           </div>
           <div class="member flex_vert">
             <img src="http://placehold.jp/220x220.png" alt="member1">
@@ -34,7 +34,7 @@
             <img src="http://placehold.jp/220x220.png" alt="member1">
             <h2 class="name">imusic</h2>
             <p class="descri">Midi Programer</p>
-            <p class="equip">AbltonLive, AbletonPush, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
+            <p class="equip">AbltonLive9, AbletonPush2, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
           </div>
         </div>
       </div>
