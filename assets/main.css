@@ -5,9 +5,17 @@
   font-size: 16px;
   line-height: 1.8rem;
   box-sizing: border-box;
+  font-weight: 100;
+}
+body {
+  background-color: #999;
 }
 
 h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
   font-size: 1.8rem;
 }
 
@@ -16,6 +24,11 @@ p {
 }
 
 header {
+  background-color: rgba(31, 31, 31, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #fff;
+  padding: 0.3rem;
   display: flex;
   position: sticky;
   top: 0px;
@@ -32,12 +45,64 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .main_contents {
   min-height: 100%;
+  background-color: #666;
+  color: aliceblue;
+  padding-bottom: 2rem;
 }
 
-.small_text {
-  font-size: 0.8em;
+.wrapper {
+  width: min(95%, 740px);
+  margin: auto;
+}
+
+article{
+  padding-top: 3rem;
+}
+
+.flex_hori {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flex_vert {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.members {
+  flex-wrap: wrap;
+}
+
+.member img {
+  border-radius: 50%;
+}
+
+.member .name {
+  font-size: 1.2em;
+}
+
+.member .name, .member .descri, .member .equip {
+  text-align: center;
+}
+
+.soundcloud_frame {
+  margin: auto;
+  width: min(95%, 480px);
+}
+
+footer {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.979);
+  padding: 0.3rem 0.3rem 2rem 0.3rem;
+  text-align: right;
 }
