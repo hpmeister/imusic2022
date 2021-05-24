@@ -1,0 +1,4 @@
+<?php
+/*
+single.php
+*/

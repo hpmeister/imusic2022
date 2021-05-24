@@ -13,7 +13,7 @@
   <div class="thecontent">
     <header>
       <h1 class="logo">imusic works</h1>
-      <button class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()">menu</button>
+      <a class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="assets/menu.svg" alt="menu"></a>
     </header>
     <main class="main_contents">
       <article id="members">
