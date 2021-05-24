@@ -12,8 +12,43 @@
 <body>
   <header>
     <h1 class="logo">imusic works</h1>
-    <button class="menu" id="btn_menu">menu</button>
-    <nav><?php include 'assets/menu.php';?></nav>
+    <button class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()">menu</button>
   </header>
+  <main class="main_contents">
+    <article id="members">
+      <div class="wrapper">
+        <div class="flex_hori">
+          <div class="member flex_vert">
+            <img src="http://placehold.jp/220x220.png" alt="member1">
+            <h2 class="name">imusic</h2>
+            <p class="descri">Guitarist</p>
+            <p class="equip">Fender ST314, Fender STM, VOX MV50Rock, JimDunlop CryBaby, Boss DD-500, Digitech Genesis3</p>
+          </div>
+          <div class="member flex_vert">
+            <img src="http://placehold.jp/220x220.png" alt="member1">
+            <h2 class="name">imusic</h2>
+            <p class="descri">Bassist</p>
+            <p class="equip">Eden WTDI</p>
+          </div>
+          <div class="member flex_vert">
+            <img src="http://placehold.jp/220x220.png" alt="member1">
+            <h2 class="name">imusic</h2>
+            <p class="descri">Midi Programer</p>
+            <p class="equip">AbltonLive9, AbletonPush2, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="souncloud">
+      <div class="wrapper soundcloud_frame">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/28827747&color=%23b9b3b2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      </div>
+    </article>
+  </main>
+  <footer class="">
+    <p class="small_text">copyright 2022 imusic All Rights Reserved.</p>
+  </footer>
+  <nav id="toggle_menu" style="display: none;"><?php include 'assets/menu.php';?></nav>
+  <script src="assets/main.js"></script>
 </body>
 </html>

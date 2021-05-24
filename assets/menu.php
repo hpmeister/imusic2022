@@ -1,7 +1,5 @@
-<?php
-echo '<ul>'.PHP_EOL;
-echo '<li></li>'.PHP_EOL;
-echo '<li></li>'.PHP_EOL;
-echo '<li></li>'.PHP_EOL;
-echo '<li></li>'.PHP_EOL;
-echo '</ul>'.PHP_EOL;
+<ul class="menu">
+  <li><a href="/">home</a></li>
+  <li><a href="./music.php">music</a></li>
+  <li><a href="./blog.php">blog</a></li>
+</ul>
