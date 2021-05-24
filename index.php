@@ -50,7 +50,7 @@
       <p class="small_text">copyright 2022 imusic All Rights Reserved.</p>
     </footer>
   </div>
-  <nav id="toggle_menu" style="display: none;"><?php include 'assets/menu.php';?></nav>
+  <nav id="toggle_menu" style="display: none;"><?php readfile ('http://2022.imusic-works.net/blog/');?></nav>
   <script src="assets/main.js"></script>
 </body>
 </html>
