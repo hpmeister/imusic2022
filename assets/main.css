@@ -23,6 +23,14 @@ p {
   font-size: 0.8rem;
 }
 
+.thecontent {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #666;
+}
+
 header {
   background-color: rgba(31, 31, 31, 0.8);
   backdrop-filter: blur(5px);
@@ -43,7 +51,7 @@ header {
   width: 70%;
   max-width: 260px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(31, 31, 31, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -74,7 +82,7 @@ article{
 .flex_vert {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   align-items: center;
 }
@@ -83,12 +91,16 @@ article{
   flex-wrap: wrap;
 }
 
+.member .img_block {
+  padding-bottom: 0.25rem;
+}
+
 .member img {
   border-radius: 50%;
 }
 
 .member .name {
-  font-size: 1.2em;
+  font-size: 1.8em;
 }
 
 .member .name, .member .descri, .member .equip {
