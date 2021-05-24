@@ -1,5 +1,7 @@
 <?php
-/* index.php */
+/*
+index.php
+*/
 
 echo '<h3 class="title">latest posts</h3>';
 echo '<ul class="">';
