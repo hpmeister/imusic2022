@@ -12,7 +12,10 @@
 <body>
   <div class="thecontent">
     <header>
-      <h1 class="logo"><?=get_bloginfo('name');?></h1>
+<?php if (is_home()) { echo '<h1 class="logo">'; } else { echo '<p class="logo">'; } ?>
+      <a href="/"><?=get_bloginfo('name');?></a>
+<?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>
+      
       <a class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="/assets/menu.svg" alt="menu"></a>
     </header>
     <main class="main_contents">

@@ -2,7 +2,9 @@
 /*
 overlay_menu.php
 */
-
+echo '<div class="close_btn">';
+echo '  <a onclick="javascript:menu_close()" id="close"><img src="/assets/close.svg" alt="close button"></a>';
+echo '</div>';
 echo '<h3 class="title">latest posts</h3>';
 echo '<ul class="">';
 if(have_posts()):
