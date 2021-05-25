@@ -8,7 +8,7 @@ echo '</div>';
 echo '<h3 class="title">latest posts</h3>';
 echo '<ul class="">';
 
-$args = array( 'posts_per_page' => 8, 'order'=> 'DESC', 'orderby' => 'date' );
+$args = array( 'posts_per_page' => 5, 'order'=> 'DESC', 'orderby' => 'date' );
 $postslist = get_posts( $args );
 foreach ( $postslist as $post ) :
   setup_postdata( $post );
