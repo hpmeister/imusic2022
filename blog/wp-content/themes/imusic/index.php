@@ -1,24 +1,9 @@
 <?php
-?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>imusic</title>
-  <link rel="stylesheet" href="/assets/main.css">
-</head>
-<body>
-  <div class="thecontent">
-    <header>
-<?php if (is_home()) { echo '<h1 class="logo">'; } else { echo '<p class="logo">'; } ?>
-      <a href="/"><?=get_bloginfo('name');?></a>
-<?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>
-      
-      <a class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="/assets/menu.svg" alt="menu"></a>
-    </header>
-    <main class="main_contents">
+/* 
+index.php
+ */
+get_header();?>
+
       <article id="members">
         <div class="wrapper">
           <div class="flex_hori">
@@ -38,7 +23,7 @@
               <p class=""><img src="http://placehold.jp/220x220.png" alt="member1"></p>
               <h2 class="name">imusic</h2>
               <p class="descri">Midi Programer</p>
-              <p class="equip">AbltonLive9, AbletonPush2, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
+              <p class="equip">Ablton Live9, Ableton Push2, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
             </div>
           </div>
         </div>
@@ -48,12 +33,5 @@
           <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/28827747&color=%23b9b3b2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         </div>
       </article>
-    </main>
-    <footer class="">
-      <p class="small_text">copyright 2022 imusic All Rights Reserved.</p>
-    </footer>
-  </div>
-  <nav id="toggle_menu" style="display: none;"><?php get_template_part('inc/overlay_menu');?></nav>
-  <script src="/assets/main.js"></script>
-</body>
-</html>
+
+<?php get_footer();

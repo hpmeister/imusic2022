@@ -12,7 +12,7 @@ body {
   background-color: rgb(153, 153, 153);
 }
 
-h1, h1 a {
+h1, h1 a, p.logo a {
   font-size: 2.5rem;
 }
 
@@ -25,15 +25,15 @@ h3 {
 }
 
 p {
-  line-height: 1.8rem;
-  font-size: 0.8rem;
+  line-height: 1.8em;
+  font-size: 0.9rem;
 }
 
 a, a:hover, a:link {
   color: aliceblue;
 }
 
-a:not(.logo) {
+h1.logo a,p.logo a, a img {
   text-decoration: none;
 }
 
@@ -54,6 +54,10 @@ ul:not(.dotted) {
   top: 0;
   background-color: rgb(37, 37, 99);
   left: 0;
+}
+
+.small_text {
+  font-size: 0.8rem;
 }
 
 header {
@@ -91,37 +95,17 @@ article{
   flex-wrap: wrap;
 }
 
+.justify_left {
+  justify-content: left!important;
+  align-items: center;
+}
+
 .flex_vert {
   display: flex;
   flex: 1;
   /* justify-content: space-between; */
   flex-direction: column;
   align-items: center;
-}
-
-.members {
-  flex-wrap: wrap;
-}
-
-.member .img_block {
-  padding-bottom: 0.25rem;
-}
-
-.member img {
-  border-radius: 50%;
-}
-
-.member .name {
-  font-size: 1.8em;
-}
-
-.member .name, .member .descri, .member .equip {
-  text-align: center;
-}
-
-.soundcloud_frame {
-  margin: auto;
-  width: min(95%, 480px);
 }
 
 footer {
@@ -163,11 +147,14 @@ overlay menu
 }
 
 nav .title {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
-nav a {
+nav ul a {
+  color: #c8c8ff;
   display: block;
+  padding: 2px 0px;
+  text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -177,4 +164,80 @@ nav .close_btn {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.socialmedia img {
+  filter: invert(100%);
+}
+
+/* 
+
+
+index.php
+
+
+*/
+
+
+.members {
+  flex-wrap: wrap;
+}
+
+.member .img_block {
+  padding-bottom: 0.25rem;
+}
+
+.member img {
+  border-radius: 50%;
+}
+
+.member .name {
+  font-size: 1.8em;
+}
+
+.member .name, .member .descri, .member .equip {
+  text-align: center;
+}
+
+.soundcloud_frame {
+  margin: auto;
+  width: min(95%, 480px);
+}
+
+/* 
+
+
+single.php
+
+
+*/
+
+.post_title {
+  padding-bottom: 2rem;
+}
+
+.post img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+a[target="_blank"] {
+  padding-right: 20px;
+  background-image: url(/assets/extlink.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+figure.is-type-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.wp-block-embed__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
