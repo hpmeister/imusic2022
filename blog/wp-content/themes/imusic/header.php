@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,6 @@
       <a href="/"><?=get_bloginfo('name');?></a>
 <?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>
       
-      <a class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="/assets/menu.svg" alt="menu"></a>
+      <a class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="/assets/menu.svg" alt="menu" width="48" height="48"></a>
     </header>
     <main class="main_contents">
