@@ -24,7 +24,7 @@ h3 {
   font-size: 1.4rem;
 }
 
-p {
+p, a {
   line-height: 1.8em;
   font-size: 0.9rem;
 }
@@ -82,6 +82,9 @@ header {
 .wrapper {
   width: min(95%, 740px);
   margin: auto;
+}
+.post_wrapper {
+  width: min(95%, 540px)!important;
 }
 
 article{
@@ -218,6 +221,13 @@ single.php
 
 .post img {
   width: 100%;
+}
+
+.post p {
+  padding-bottom: 1rem;
+}
+
+.post figure {
   padding-bottom: 1rem;
 }
 
@@ -240,4 +250,8 @@ figure.is-type-video {
   right: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+.instagram-media {
+  min-width: 304px!important;
 }
