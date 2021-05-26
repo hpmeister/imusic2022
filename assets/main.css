@@ -16,8 +16,8 @@ h1, h1 a, p.logo a {
   font-size: 2.5rem;
 }
 
-h2 {
-  font-size: 1.8rem;
+h2, h2 a {
+  font-size: 1.8rem!important;
 }
 
 h3 {
@@ -33,7 +33,7 @@ a, a:hover, a:link {
   color: aliceblue;
 }
 
-h1.logo a,p.logo a, a img {
+h1.logo a,p.logo a, a img, h2 a {
   text-decoration: none;
 }
 
@@ -82,9 +82,6 @@ header {
 .wrapper {
   width: min(95%, 740px);
   margin: auto;
-}
-.post_wrapper {
-  width: min(95%, 540px)!important;
 }
 
 article{
@@ -215,6 +212,10 @@ single.php
 
 */
 
+.post_wrapper {
+  width: min(95%, 540px)!important;
+}
+
 .post_title {
   padding-bottom: 2rem;
 }
@@ -255,3 +256,16 @@ figure.is-type-video {
 .instagram-media {
   min-width: 304px!important;
 }
+
+/* 
+
+
+archive.php
+
+
+*/
+
+.post {
+  padding-bottom: 2rem;
+}
+
