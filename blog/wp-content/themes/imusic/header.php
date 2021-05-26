@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>imusic</title>
+  <title>
+    <?php wp_title('|', true, 'right');
+    bloginfo('name');?>
+  </title>
+  <link rel="canonical" href="http://imusic-works.net<?= $_SERVER['REQUEST_URI'] ?>">
   <link rel="stylesheet" href="/assets/main.css">
 </head>
 <body>

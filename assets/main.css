@@ -24,7 +24,7 @@ h3 {
   font-size: 1.4rem;
 }
 
-p, a {
+p {
   line-height: 1.8em;
   font-size: 0.9rem;
 }
@@ -74,7 +74,7 @@ header {
 }
 
 .main_contents {
-  min-height: calc(100vh - 2.3rem - 51px);
+  min-height: calc(100vh - 2.3rem - 51px - 0.8rem);
   color: aliceblue;
   padding-bottom: 2rem;
 }
