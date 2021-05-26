@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="thecontent">
-    <header>
+    <header class="">
 <?php if (is_home()) { echo '<h1 class="logo">'; } else { echo '<p class="logo">'; } ?>
       <a href="/"><?=get_bloginfo('name');?></a>
 <?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>

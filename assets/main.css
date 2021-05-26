@@ -24,7 +24,7 @@ h3 {
   font-size: 1.4rem;
 }
 
-p {
+p:not(.logo), .post a {
   line-height: 1.8em;
   font-size: 0.9rem;
 }
@@ -42,7 +42,7 @@ a img {
   margin: 0;
 }
 
-ul:not(.dotted) {
+ul :not(.dotted) {
   list-style: none;
   margin: 0;
   line-height: 1.8rem;
