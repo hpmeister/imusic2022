@@ -14,9 +14,9 @@
 <body>
   <div class="thecontent">
     <header class="">
-<?php if (is_home()) { echo '<h1 class="logo">'; } else { echo '<p class="logo">'; } ?>
-      <a href="/"><?=get_bloginfo('name');?></a>
-<?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>
+      <?php if (is_home()) { echo '<h1 class="logo">'.PHP_EOL; } else { echo '<p class="logo">'.PHP_EOL; } ?>
+        <a href="/"><?=get_bloginfo('name');?></a>
+      <?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>
       
       <a class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="/assets/menu.svg" alt="menu" width="48" height="48"></a>
     </header>

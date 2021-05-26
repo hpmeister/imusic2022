@@ -261,6 +261,18 @@ figure iframe {
   min-width: 304px!important;
 }
 
+.cat_name a {
+  background-image: url(/assets/up.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 4px 6px 6px 16px;
+}
+
+.date {
+  padding-bottom: 2rem;
+  font-size: 0.8em;
+}
+
 /* 
 
 
@@ -273,3 +285,6 @@ archive.php
   padding-bottom: 2rem;
 }
 
+#archive .post_title {
+  font-size: 1rem;
+}
