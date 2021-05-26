@@ -228,7 +228,7 @@ single.php
   padding-bottom: 1rem;
 }
 
-.post figure {
+.post figure:not(.is-type-video) {
   padding-bottom: 1rem;
 }
 
@@ -243,6 +243,10 @@ figure.is-type-video {
   position: relative;
   width: 100%;
   padding-top: 56.25%;
+}
+
+figure iframe {
+  width: 100%;
 }
 
 .wp-block-embed__wrapper {
