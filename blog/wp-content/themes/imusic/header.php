@@ -10,6 +10,7 @@
   </title>
   <link rel="canonical" href="http://imusic-works.net<?= $_SERVER['REQUEST_URI'] ?>">
   <link rel="stylesheet" href="/assets/main.css">
+  <link rel="shortcut icon" href="/assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
   <div class="thecontent">
