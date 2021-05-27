@@ -4,6 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@imusic_works">
+  <meta property="og:url" content="http://imusic-works.net<?= $_SERVER['REQUEST_URI']?>">
+  <meta property="og:title" content="
+<?php
+wp_title('|', true, 'right');
+bloginfo('name');?>
+">
+<?php
+if(is_home()) { $desc = get_bloginfo('description'); }
+if(is_category()) { $desc = strip_tags(category_description()); }
+if(is_single()) { $desc = strip_tags(get_the_excerpt()); }
+?>
+  <meta property="og:description" content="<?=$desc?>">
+  <meta property="og:image" content="http://2022.imusic-works.net/assets/favicon@0.5x.png">
   <title>
     <?php wp_title('|', true, 'right');
     bloginfo('name');?>
