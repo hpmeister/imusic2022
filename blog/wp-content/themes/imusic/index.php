@@ -8,19 +8,19 @@ get_header();?>
         <div class="wrapper">
           <div class="flex_hori">
             <div class="member flex_vert">
-              <p class="img_block"><img src="http://placehold.jp/220x220.png" alt="member1"></p>
+              <p class="img_block"><img src="http://placehold.jp/220x220.png" width="220" alt="imusic"></p>
               <h2 class="name">imusic</h2>
               <p class="descri">Guitar</p>
               <p class="equip">Fender ST314, Fender STM, VOX MV50Rock, JimDunlop CryBaby, Boss DD-500, Digitech Genesis3</p>
             </div>
             <div class="member flex_vert">
-              <p class=""><img src="http://placehold.jp/220x220.png" alt="member1"></p>
+              <p class="img_block"><img src="http://placehold.jp/220x220.png" width="220" alt="imusic"></p>
               <h2 class="name">imusic</h2>
               <p class="descri">Bass, Vocal</p>
               <p class="equip">Eden WTDI, Behringer XM8500</p>
             </div>
             <div class="member flex_vert">
-              <p class=""><img src="http://placehold.jp/220x220.png" alt="member1"></p>
+              <p class="img_block"><img src="http://placehold.jp/220x220.png" width="220" alt="imusic"></p>
               <h2 class="name">imusic</h2>
               <p class="descri">Midi Program</p>
               <p class="equip">Ablton Live9, Ableton Push2, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
