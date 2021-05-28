@@ -199,11 +199,14 @@ index.php
   text-align: center;
 }
 
-.soundcloud_frame {
+.soundcloud_frame,
+.twitter_wrapper {
   margin: auto;
   width: min(95%, 480px);
 }
-
+#twitter_timeline {
+  display: block;
+}
 /* 
 
 
