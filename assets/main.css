@@ -12,25 +12,29 @@ body {
   background-color: rgb(153, 153, 153);
 }
 
-h1 {
+h1, h1 a, p.logo a {
   font-size: 2.5rem;
 }
 
-h2 {
-  font-size: 1.8rem;
+h2, h2 a {
+  font-size: 1.8rem!important;
 }
 
 h3 {
   font-size: 1.4rem;
 }
 
-p {
-  line-height: 1.8rem;
-  font-size: 0.8rem;
+p:not(.logo), .post a {
+  line-height: 1.8em;
+  font-size: 0.9rem;
 }
 
 a, a:hover, a:link {
   color: aliceblue;
+}
+
+h1.logo a,p.logo a, a img, h2 a {
+  text-decoration: none;
 }
 
 a img {
@@ -38,7 +42,7 @@ a img {
   margin: 0;
 }
 
-ul:not(.dotted) {
+ul :not(.dotted) {
   list-style: none;
   margin: 0;
   line-height: 1.8rem;
@@ -50,6 +54,10 @@ ul:not(.dotted) {
   top: 0;
   background-color: rgb(37, 37, 99);
   left: 0;
+}
+
+.small_text {
+  font-size: 0.8rem;
 }
 
 header {
@@ -66,7 +74,7 @@ header {
 }
 
 .main_contents {
-  min-height: 100%;
+  min-height: calc(100vh - 2.3rem - 51px - 0.8rem);
   color: aliceblue;
   padding-bottom: 2rem;
 }
@@ -87,6 +95,11 @@ article{
   flex-wrap: wrap;
 }
 
+.justify_left {
+  justify-content: left!important;
+  align-items: center;
+}
+
 .flex_vert {
   display: flex;
   flex: 1;
@@ -94,6 +107,77 @@ article{
   flex-direction: column;
   align-items: center;
 }
+
+footer {
+  color: aliceblue;
+  background-color: rgba(0, 0, 50);
+  padding: 0.3rem 0.3rem 2rem 0.3rem;
+  text-align: right;
+}
+
+nav {
+  padding: 2rem;
+}
+
+nav ul {
+  padding-bottom: 2rem;
+}
+
+/*
+
+
+
+overlay menu
+
+
+
+*/
+
+#toggle_menu {
+  display: none;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+nav .title {
+  padding-bottom: 1rem;
+}
+
+nav ul a {
+  color: #c8c8ff;
+  display: block;
+  padding: 2px 0px;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+nav .close_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.socialmedia img {
+  filter: invert(100%);
+}
+
+/* 
+
+
+index.php
+
+
+*/
+
 
 .members {
   flex-wrap: wrap;
@@ -120,41 +204,87 @@ article{
   width: min(95%, 480px);
 }
 
-footer {
-  color: aliceblue;
-  background-color: rgba(0, 0, 50);
-  padding: 0.3rem 0.3rem 2rem 0.3rem;
-  text-align: right;
+/* 
+
+
+single.php
+
+
+*/
+
+.post_wrapper {
+  width: min(95%, 540px)!important;
 }
 
-nav {
-  padding: 2rem;
-}
-
-nav ul {
+.post_title {
   padding-bottom: 2rem;
 }
 
-#toggle_menu {
-  display: none;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 80%;
-  max-width: 300px;
-  height: 100%;
-  background-color: rgba(31, 31, 31, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+.post img {
+  width: 100%;
 }
 
-nav .title {
-  padding-bottom: 0.5rem;
+.post p {
+  padding-bottom: 1rem;
 }
 
-nav a {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.post figure:not(.is-type-video) {
+  padding-bottom: 1rem;
+}
+
+a[target="_blank"] {
+  padding-right: 20px;
+  background-image: url(/assets/extlink.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+figure.is-type-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+figure iframe {
+  width: 100%;
+}
+
+.wp-block-embed__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.instagram-media {
+  min-width: 304px!important;
+}
+
+.cat_name a {
+  background-image: url(/assets/up.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 4px 6px 6px 16px;
+}
+
+.date {
+  padding-bottom: 2rem;
+  font-size: 0.8em;
+}
+
+/* 
+
+
+archive.php
+
+
+*/
+
+.post {
+  padding-bottom: 2rem;
+}
+
+#archive .post_title {
+  font-size: 1rem;
 }

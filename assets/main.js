@@ -5,6 +5,8 @@ function toggle_menu() {
   } else {
     document.getElementById('toggle_menu').style.display = 'none';
   }
+}
 
-
+function menu_close() {
+  document.getElementById('toggle_menu').style.display = 'none';
 }
