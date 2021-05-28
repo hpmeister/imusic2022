@@ -7,7 +7,12 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@imusic_works">
-  <meta property="og:url" content="http://imusic-works.net<?= $_SERVER['REQUEST_URI']?>">
+  <meta property="og:url" content="http://imusic-works.net<?=$_SERVER['REQUEST_URI']?>">
+<?php
+if(is_home()) { $type = 'website'; }
+else { $type = 'article'; }
+?>
+  <meta property="og:type" content="<?=$type?>">
   <meta property="og:title" content="
 <?php
 wp_title('|', true, 'right');
@@ -19,7 +24,7 @@ if(is_category()) { $desc = strip_tags(category_description()); }
 if(is_single()) { $desc = strip_tags(get_the_excerpt()); }
 ?>
   <meta property="og:description" content="<?=$desc?>">
-  <meta property="og:image" content="http://2022.imusic-works.net/assets/favicon@0.5x.png">
+  <meta property="og:image" content="http://<?=$_SERVER['SERVER_NAME']?>/assets/favicon@0.5x.png">
   <title>
     <?php wp_title('|', true, 'right');
     bloginfo('name');?>
