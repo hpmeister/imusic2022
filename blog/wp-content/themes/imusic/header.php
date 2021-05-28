@@ -27,6 +27,15 @@ if(is_single()) { $desc = strip_tags(get_the_excerpt()); }
   <link rel="canonical" href="http://imusic-works.net<?= $_SERVER['REQUEST_URI'] ?>">
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="shortcut icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG9VPKP8TS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KG9VPKP8TS');
+  </script>
 </head>
 <body>
   <div class="thecontent">
