@@ -269,7 +269,8 @@ figure iframe {
   background-image: url(/assets/up.svg);
   background-repeat: no-repeat;
   background-position: left center;
-  padding: 4px 6px 6px 16px;
+  padding: 4px 6px 5px 16px;
+  text-decoration: none;
 }
 
 .date {
