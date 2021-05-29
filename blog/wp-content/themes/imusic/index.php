@@ -28,10 +28,21 @@ get_header();?>
           </div>
         </div>
       </article>
-      <article id="souncloud">
+      <aside id="souncloud">
         <div class="wrapper soundcloud_frame">
           <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/28827747&color=%23b9b3b2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
         </div>
-      </article>
+      </aside>
+      <aside id="twitter_timeline">
+        <div class="wrapper twitter_wrapper">
+        <a class="twitter-timeline"
+          data-width="540"
+          data-height="370"
+          data-chrome=" nofooter "
+          href="https://twitter.com/imusic_works?ref_src=twsrc%5Etfw">Tweets by imusic_works</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+        </div>
+      </aside>
 
 <?php get_footer();
