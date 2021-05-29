@@ -84,7 +84,7 @@ header {
   margin: auto;
 }
 
-article{
+article, aside{
   padding-top: 3rem;
 }
 
