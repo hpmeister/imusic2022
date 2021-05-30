@@ -115,13 +115,6 @@ footer {
   text-align: right;
 }
 
-nav {
-  padding: 2rem;
-}
-
-nav ul {
-  padding-bottom: 2rem;
-}
 
 /*
 
@@ -132,6 +125,13 @@ overlay menu
 
 
 */
+nav {
+  padding:  2rem 2rem 0rem 2rem;
+}
+
+nav ul {
+  padding-bottom: 2rem;
+}
 
 #toggle_menu {
   display: none;
