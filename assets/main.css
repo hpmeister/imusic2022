@@ -115,13 +115,6 @@ footer {
   text-align: right;
 }
 
-nav {
-  padding: 2rem;
-}
-
-nav ul {
-  padding-bottom: 2rem;
-}
 
 /*
 
@@ -132,6 +125,13 @@ overlay menu
 
 
 */
+nav {
+  padding:  2rem 2rem 0rem 2rem;
+}
+
+nav ul {
+  padding-bottom: 2rem;
+}
 
 #toggle_menu {
   display: none;
@@ -190,6 +190,7 @@ index.php
 
 .member img {
   border-radius: 50%;
+  filter: grayscale(100%);
 }
 
 .member .name {
@@ -269,7 +270,8 @@ figure iframe {
   background-image: url(/assets/up.svg);
   background-repeat: no-repeat;
   background-position: left center;
-  padding: 4px 6px 6px 16px;
+  padding: 4px 6px 5px 16px;
+  text-decoration: none;
 }
 
 .date {
