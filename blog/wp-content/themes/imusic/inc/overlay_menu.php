@@ -3,7 +3,7 @@
 overlay_menu.php
 */
 echo '<div class="close_btn">';
-echo '  <a href="javascript:void();" onclick="javascript:menu_close()" id="close"><img src="'.get_bloginfo('stylesheet_directory').'/assets/close.svg" alt="close button"></a>';
+echo '  <a href="javascript:void(0);" onclick="javascript:menu_close()" id="close"><img src="'.get_bloginfo('stylesheet_directory').'/assets/close.svg" alt="close button"></a>';
 echo '</div>';
 echo '<h2 class="title">latest posts</h2>';
 echo '<ul class="">';

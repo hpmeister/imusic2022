@@ -52,6 +52,6 @@ if( is_single() ) { $desc = strip_tags( get_the_excerpt() ); }
         <a href="/"><?=get_bloginfo( 'name');?></a>
       <?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>
       
-      <a href="javascript:void();" class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/menu.svg" alt="menu" width="48" height="48"></a>
+      <a href="javascript:void(0);" class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/menu.svg" alt="menu" width="48" height="48"></a>
     </header>
     <main class="main_contents">
