@@ -9,7 +9,7 @@
   <meta name="twitter:site" content="@imusic_works">
   <meta property="og:url" content="http://imusic-works.net<?=$_SERVER['REQUEST_URI']?>">
 <?php
-if(is_home()) { $type = 'website'; }
+if( is_home() ) { $type = 'website'; }
 else { $type = 'article'; }
 ?>
   <meta property="og:type" content="<?=$type?>">
@@ -19,9 +19,9 @@ wp_title( '|', true, 'right' );
 bloginfo( 'name' );?>
 ">
 <?php
-if(is_home()) { $desc = get_bloginfo( 'description' ); }
-if(is_category()) { $desc = strip_tags( category_description() ); }
-if(is_single()) { $desc = strip_tags( get_the_excerpt() ); }
+if( is_home() ) { $desc = get_bloginfo( 'description' ); }
+if( is_category() ) { $desc = strip_tags( category_description() ); }
+if( is_single() ) { $desc = strip_tags( get_the_excerpt() ); }
 ?>
   <meta property="og:description" content="<?=$desc?>">
   <meta property="og:image" content="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/favicon@0.5x.png">
@@ -29,9 +29,11 @@ if(is_single()) { $desc = strip_tags( get_the_excerpt() ); }
     <?php wp_title('|', true, 'right');
     bloginfo( 'name');?>
   </title>
+<?php if ( !is_single() ) { ?>
   <link rel="canonical" href="http://imusic-works.net<?= $_SERVER['REQUEST_URI'] ?>">
+<?php } ?>
   <link rel="shortcut icon" href="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="<?= bloginfo( 'stylesheet_uri' ); ?>">
+  <link rel="stylesheet" href="<?= get_stylesheet_uri(); ?>">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KG9VPKP8TS"></script>
   <script>
@@ -50,6 +52,6 @@ if(is_single()) { $desc = strip_tags( get_the_excerpt() ); }
         <a href="/"><?=get_bloginfo( 'name');?></a>
       <?php if (is_home()) { echo '</h1>'; } else { echo '</p>'; } ?>
       
-      <a href="javascript:void();" class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/menu.svg" alt="menu" width="48" height="48"></a>
+      <a href="javascript:void(0);" class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/menu.svg" alt="menu" width="48" height="48"></a>
     </header>
     <main class="main_contents">
