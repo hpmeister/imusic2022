@@ -9,7 +9,7 @@
   <meta name="twitter:site" content="@imusic_works">
   <meta property="og:url" content="http://imusic-works.net<?=$_SERVER['REQUEST_URI']?>">
 <?php
-if(is_home()) { $type = 'website'; }
+if( is_home() ) { $type = 'website'; }
 else { $type = 'article'; }
 ?>
   <meta property="og:type" content="<?=$type?>">
