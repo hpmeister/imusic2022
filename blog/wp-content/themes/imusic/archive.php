@@ -6,7 +6,7 @@ archive.php
 get_header();
 
 global $post;
-$categories = get_the_category($post->ID);
+$categories = get_the_category( $post->ID );
 // var_dump( $categories );
 
 ?>

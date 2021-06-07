@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -241,7 +243,7 @@ single.php
 
 a[target="_blank"] {
   padding-right: 20px;
-  background-image: url(/assets/extlink.svg);
+  background-image: url(extlink.svg);
   background-repeat: no-repeat;
   background-position: center right;
 }
@@ -269,7 +271,7 @@ figure iframe {
 }
 
 .cat_name a {
-  background-image: url(/assets/up.svg);
+  background-image: url(up.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding: 4px 6px 5px 16px;
