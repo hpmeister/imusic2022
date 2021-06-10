@@ -12,14 +12,14 @@ $categories = get_the_category( $post->ID );
 ?>
 <article id="archive">
   <div class="wrapper post_wrapper">
-    <h1 class="post_title">category: <?=$categories[0]->name;?></h1>
+    <h1 class="post_title">category: <?= $categories[0]->name; ?></h1>
 <?php
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post(); 
     ?>
     <div class="post">
-      <h2 class="title"><a href="<?=get_permalink();?>"><?php the_title(); ?></a></h2>
+      <h2 class="title"><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
       <?php the_excerpt(); ?>
     </div>
     <?php
