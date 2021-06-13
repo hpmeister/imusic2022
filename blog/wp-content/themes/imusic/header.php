@@ -49,7 +49,7 @@ if( is_single() ) { $desc = strip_tags( get_the_excerpt() ); }
   <div class="thecontent">
     <header class="">
       <?php if ( is_home() ) { echo '<h1 class="logo">'.PHP_EOL; } else { echo '<p class="logo">'.PHP_EOL; } ?>
-        <a href="/"><?= get_bloginfo( 'name'); ?></a>
+        <a href="<?php echo get_bloginfo( 'url' ); ?>"><?= get_bloginfo( 'name' ); ?></a>
       <?php if ( is_home() ) { echo '</h1>'; } else { echo '</p>'; } ?>
       
       <a href="javascript:void(0);" class="btn_toggle_menu" id="btn_menu" onclick="toggle_menu()"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/menu.svg" alt="menu" width="48" height="48"></a>
