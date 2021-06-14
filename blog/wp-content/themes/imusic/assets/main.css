@@ -298,3 +298,28 @@ archive.php
 #archive .post_title {
   font-size: 1rem;
 }
+
+.align_left {
+  text-align: left;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.pagination {
+  position: relative;
+}
+
+.pagination > div {
+  position: absolute;
+  top: 0;
+}
+
+.pagination .nav-previous {
+  right: 0;
+}
+
+.pagination .nav-next {
+  left: 0;
+}
