@@ -23,7 +23,7 @@ get_header();?>
               <p class="img_block"><img src="https://lh3.googleusercontent.com/pw/ACtC-3f7mdIEK-PLcWKurOjQOmT8RU4XUsl8yJnqkaRQluUBPbvfJ-zZiWXPxmMCwL6Zlt6nFZT1ecSbcBP_I3YAdxeu4QusPKswaOvjfyywR-MWWphH9my-rcJSlJV7JGFhFiHQsPYJMsyF-BvrNL1cG7oMMQ=s220-no?authuser=0" width="220" height="220" alt="imusic"></p>
               <h2 class="name">imusic</h2>
               <p class="descri">Midi Program</p>
-              <p class="equip">Ablton Live9, Ableton Push2, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
+              <p class="equip">Ableton Live9, Ableton Push2, Korg microKEY, Apple iMac, NativeInstruments KomplateAudio6</p>
             </div>
           </div>
         </div>
